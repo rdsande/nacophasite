@@ -1,0 +1,1 @@
+sass --watch C:\xampp\htdocs\wp\klenar\wp-content\themes\klenar\assets\scss\main.scss:C:\xampp\htdocs\wp\klenar\wp-content\themes\klenar\assets\css\klenar-core.css

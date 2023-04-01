@@ -1,0 +1,21 @@
+.eicon-t-letter{
+	position: relative;
+}
+
+.eicon-t-letter::before {
+	content: '\e86b';
+	background: url("../img/tp.jpg") no-repeat center center/cover;
+	color: #f00;
+	width: 30px;
+	height: 30px;
+	content: "";
+	display: inline-block;
+	border-radius: 5px;
+}
+.eicon-t-letter::after {
+	content: "";
+	background: url("http://localhost/wp-test/wp-content/plugins/imroz-core/assets/images/icons/brand-white.png");
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+}

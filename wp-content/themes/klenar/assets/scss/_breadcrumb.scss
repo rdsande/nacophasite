@@ -1,0 +1,90 @@
+/*----------------------------------------*/
+/*  19. Breadcrumb
+/*----------------------------------------*/
+.tp-page-title-area {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f3ebde;
+
+    @media #{$xs} {
+        padding-top:100px;
+        padding-bottom: 100px;
+        background-position: left;
+    }
+}
+.tp-page-title-img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    & img {
+        min-height: 100%;
+	    object-fit: cover;
+    }
+}
+.breadcrumb-title {
+    color: $heading-color-black;
+    font-size: 70px;
+    line-height: 1;
+    margin-bottom: 20px;
+    @media #{$lg} {
+        font-size: 60px;
+    }
+    @media #{$md} {
+        font-size: 52px;
+        line-height: 1.2;
+    }
+    @media #{$xs} {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+    @media #{$sm} {
+        font-size: 46px;
+        line-height: 1.2;
+    }
+    & span {
+        color: $theme-color;
+    }
+}
+.breadcrumb-trail {
+    line-height: 1;
+    position: relative;
+    & .trail-item {
+        font-size: 17px;
+        display: inline-block;
+        list-style: none;
+        color: $body-text-color-grey;
+        font-weight: 700;
+        margin-right: 30px;
+        font-family: $nunitosans;
+        position: relative;
+        &:before {
+            position: absolute;
+            content: '\f324';
+            font-size: 14px;
+            color: $body-text-color-grey;
+            top: 55%;
+            transform: translateY(-50%);
+            right: -25px;
+            font-family: "Font Awesome 5 Pro";
+        }
+        &.trail-end{
+            &::before{
+                display: none;
+            }
+        }
+        @media #{$xs} {
+            font-size: 18px;
+        }
+        &:last-child {
+            margin-right: 0px;
+        }
+        &:hover {
+            & a {
+                color: $theme-color;
+            }
+        }
+    }
+}
+
